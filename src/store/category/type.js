@@ -1,0 +1,5 @@
+const GET_CATEGORY_DATA = "GET_CATEGORY_DATA";
+
+export {
+    GET_CATEGORY_DATA
+}

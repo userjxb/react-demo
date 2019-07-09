@@ -1,0 +1,149 @@
+#home_list{
+    .home_list_title{
+        height: 23px;
+        padding: 14px 10px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 23px;
+        .home_list_title_left{
+            padding-left: 10px;
+            color: #333;
+            font-size: 15px;
+            position: relative;
+            
+            em{
+                position: absolute;
+                left: 0;
+                top: 6px;
+                width: 3px;
+                height: 11px;
+                background: linear-gradient(to top,#ff5d06 0,#fc3f78 100%);
+               
+            }
+        }
+        .home_list_title_right{
+            color: #aaa;
+            font-size: 12px;
+            span{
+                color: #FC4D52;
+                // font-size: .15rem;
+                font-size: 15px;
+                padding: 0 5px;
+            }
+        }
+    }
+    .home_list_goods{
+        li{
+            padding:10px 0 0 10px;
+            height: 135px;
+            border-bottom: 1px solid #F5F5F5;
+            a{
+                height: 100%;
+                display: flex;
+                .home_list_goods_img{
+                    width: 126px;
+                    height: 126px;
+                    background: rgb(245, 245, 245);
+                    img{
+                        width: 126px;
+                        height: 126px;
+                    }
+                }
+                .home_list_goods_info{
+                    flex: 1;
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                    .goods_title{
+                        padding: 0 10px 10px 0px;
+                        color: #333;
+                        font-size: 14px;
+                        background: url(https://cmsstatic.dataoke.com/wap_new/common/images/is_tianmao.svg?v=2019-06-20) no-repeat left 3px;
+                        text-indent: 20px;
+                    }
+                    .goods_price{
+                        padding-top: 14px;
+                        padding-right: 10px;
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            color: #aaa;
+                            font-size: 12px;
+                            em{
+                                color: #F72239;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .goods_money{
+                        margin-top: 10px;
+                        color: #FC4D52;
+                        font-size: 12px;
+                        height: 24px;
+                        display: flex;
+                        padding-right: 10px;
+                        justify-content: space-between;
+                        em{
+                            color: #FC4D52;
+                            i{
+                                font-size: 18px;
+                                font-style: normal;
+                            }
+                        }
+                        .quan{
+                            width: 42px;
+                            height: 16px;
+                            padding: 3px 10px;
+                            border: 1px solid #FC3F78;
+                            color: #FC3F78;
+                            border-radius: 5px;
+                            line-height: 16px;
+                            text-align: center;
+                            position: relative;
+                            // overflow: hidden;
+                            .quan_left{
+                                position: absolute;
+                                width: 5px;
+                                height: 5px;
+                                border: 1px solid #FC3F78;
+                                border-radius: 50%;
+                                left: -4px;
+                                top: 7px;
+                                background: #fff;
+                                z-index: 100;
+                            }
+                            .quan_right{
+                                position: absolute;
+                                width: 5px;
+                                height: 5px;
+                                border: 1px solid #FC3F78;
+                                border-radius: 50%;
+                                right: -4px;
+                                top: 7px;
+                                background: #fff;
+                                z-index: 100;
+                            }
+                            .em_quan_left{
+                                position: absolute;
+                                width: 7px;
+                                height: 7px;
+                                background: #fff;
+                                top: 7px;
+                                left: -8px;
+                                z-index: 200;
+                            }
+                            .em_quan_right{
+                                position: absolute;
+                                width: 7px;
+                                height: 7px;
+                                background: #fff;
+                                top: 7px;
+                                right: -8px;
+                                z-index: 200;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

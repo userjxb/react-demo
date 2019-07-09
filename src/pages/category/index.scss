@@ -1,0 +1,82 @@
+.category {
+    // 左边总导航
+    .left-nav {
+        width: .82rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        overflow: hidden;
+        overflow-y: auto;
+        z-index: 5;
+        background: #F4F4F4;
+        a {
+            line-height: .45rem;
+            display: block;
+            height: .45rem;
+            color: #333;
+            z-index: 10;
+            font-size: .14rem;
+            position: relative;
+            transition: all .4s cubic-bezier(.4,.68,.15,1) 0s;
+            text-align: center;
+            overflow: hidden;
+            &.active {
+                color: #FC3F78;
+                background: #fff;
+                border-left: 2px solid #FC3F78;
+            }
+        }
+    }
+    // 右边二级分类
+    .cent {
+        height: 100%;
+        margin-left: .82rem;
+        overflow: hidden;
+        overflow-y: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        ul {
+            padding-top: .2rem;
+            // 第一个标题上边距为0
+            .second-cat:first-child {
+                li.title {
+                    margin-top: 0;
+                }
+            }
+            li.title {
+                width: 100%;
+                padding: 0 4%;
+                box-sizing: border-box;
+                margin-top: .15rem;
+                margin-bottom: .15rem;
+                height: .26rem;
+                line-height: .26rem;
+            }
+            li.cat-item {
+                width: 33%;
+                height: 1.03rem;
+                float: left;
+                text-align: center;
+                opacity: 1;
+                transition: all .5s cubic-bezier(.4,.68,.15,1) .2s;
+                transform: translateY(0) translateX(0);
+                a {
+                    display: block;
+                    font-size: .12rem;
+                    color: #333;
+                    line-height: .25rem;
+                    overflow: hidden;
+                    padding-bottom: .2rem;
+                    img {
+                        display: block;
+                        margin: auto;
+                        width: 60%;
+                        min-height: .4rem;
+                    }
+                }
+            }
+        }
+    }
+}

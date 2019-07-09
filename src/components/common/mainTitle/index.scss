@@ -1,0 +1,36 @@
+
+/* 头部样式 --start*/
+.main-title{
+    height:.44rem;
+    width:100%;
+    padding:.08rem .1rem;
+    box-sizing: border-box;
+    background:linear-gradient(to left,#FA4DBE 0,#FBAA58 100%);
+    border-bottom-color:transparent;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .16rem;
+    color: #fff;
+    .fa{
+        color:#fff;
+        display:block;
+        width:.28rem;
+        height:.28rem;
+        line-height: .28rem;
+        align-content: center;
+        text-align: center;
+    }
+    .fa-angle-left{
+        font-size:.3rem;
+    }
+    .fa-ellipsis-v{
+        font-size:.18rem;
+    }
+}
+
+/* 头部样式 --end*/

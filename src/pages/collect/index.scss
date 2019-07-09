@@ -1,0 +1,319 @@
+.collect {
+    padding-top: .44rem;
+    padding-bottom: .5rem;
+    background: #F5F5F5;
+    // 收藏列表
+    ul.user-list {
+        // 列表项
+        li.row {
+            background: #F5F5F5;
+            position: relative;
+            // 商品
+            .label {
+                padding: .1rem 0 0 .1rem;
+                display: flex;
+                background: #fdfdfd;
+                transition: transform .5s;
+                border-bottom: 1px solid #F5F5F5;
+                // 复选框checkbox
+                label {
+                    background: #f5f5f5;
+                    text-align: center;
+                    position: relative;
+                    i.fa {
+                        width: .42rem;
+                        font-size: .2rem;
+                        color: #bbb;
+                        position: absolute;
+                        left: -.52rem;
+                        top: 50%;
+                        margin-top: -.1rem;
+                    }
+                    input[type=checkbox] {
+                        display: none;
+                    }
+                    input:checked {
+                        & ~ i.fa-circle-o::before {
+                            content: "\f05d";
+                            color: #FC3F78;
+                        }
+                    }
+                }
+                // 内容
+                .cent {
+                    display: flex;
+                    // 图片
+                    .pic {
+                        width: 1.26rem;
+                        height: 1.26rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    // 信息
+                    .msg {
+                        flex: 1;
+                        margin-left: .2rem;
+                        h3 {
+                            font-size: .14rem;
+                            font-weight: normal;
+                            height: .48rem;
+                            margin-right: .1rem;
+                            margin-bottom: .11rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        .num {
+                            padding: .14rem .1rem 0 0;
+                            display: flex;
+                            justify-content: space-between;
+                            span {
+                                font-size: .12rem;
+                                color: #aaa;
+                                // line-height: 1.5rem;
+                            }
+                        }
+                        .money {
+                            font-size: .12rem;
+                            height: .24rem;
+                            line-height: .3rem;
+                            color: #FC4D52;
+                            display: flex;
+                            justify-content: space-between;
+                            span {
+                                i {
+                                    font-size: .17rem;
+                                    font-style: normal;
+                                }
+                            }
+                            .quan {
+                                line-height: .3rem;
+                                display: inline-block;
+                                margin-right: .1rem;
+                                i {
+                                    font-size: .12rem;
+                                    color: #FC4D52;
+                                    background: #fff;
+                                    font-style: normal;
+                                    border-radius: 3px;
+                                    text-align: center;
+                                    border: 1px solid #fd5a5f;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    padding: 0 .1rem;
+                                }
+                            }
+                        }
+                    }   
+                }
+            }
+            // 删除按钮
+            .btn-remove {
+                background: #FC3F78;
+                color: #fff;
+                border: 0;
+                position: absolute;
+                // right: -.86rem;
+                right: 0;
+                top: 0;
+                width: .86rem;
+                height: 100%;
+                outline: 0;
+            }
+        }
+    }
+    // 默认无收藏盒子
+    .default-msg {
+        text-align: center;
+        i.icon-shoppingbag {
+            display: block;
+            width: 50vw;
+            height: 50vw;
+            background: url(../../assets/img/ui-def.png);
+            background-size: auto 100%;
+            margin: 0 auto .14rem;
+        }
+        .btn-p {
+            padding-top: .14rem;
+            margin: 0 .14rem;
+            a {
+                display: inline-block;
+                color: #fff;
+                background: linear-gradient(to left,#FBAA58 0,#FA4DBE 100%);
+                padding: .07rem .2rem;
+                border-radius: .5rem;
+                font-size: .16rem;
+            }
+        }
+    }
+    // 为您精选
+    .coll-for-you {
+        .title {
+            padding: .14rem 0;
+            height: .21rem;
+            text-align: center;
+            span {
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                font-size: .15rem;
+                color: #FC3F78;
+                i {
+                    margin: 0 .05rem;
+                }
+                em {
+                    position: absolute;
+                    display: inline-block;
+                    width: 50%;
+                    left: -55%;
+                    top: 50%;
+                    height: 1px;
+                    text-align: right;
+                    border-top: solid 1px #FC3F78;
+                }
+                em.r {
+                    left: 105%;
+                }
+            }
+        }
+        // 精选列表
+        .listlove {
+            li {
+                width: 50%;
+                float: left;
+                .cent {
+                    background: #fff;
+                    margin: 0 2.5px 5px 5px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    .pic {
+                        height: 1.87rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    // 描述
+                    .mar {
+                        margin: 0 10px;
+                        padding-bottom: 13px;
+                        // 标题
+                        .bt {
+                            height: 40px;
+                            line-height: 30px;
+                            font-size: 14px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            font-weight: 400;
+                            margin: 0;
+                            color: #333;
+                            text-indent: .15rem;
+                            background-size: .14rem .14rem;
+                        }
+                        .tianmao {
+                            background: url(../../assets/img/is_tianmao.svg) left .08rem no-repeat;
+                        }
+                        .taobao {
+                            background: url(../../assets/img/is_taobao.svg) left .08rem no-repeat;
+                        }
+                        // 价格和销量
+                        .num {
+                            font-size: .12rem;
+                            color: #888;
+                            padding: .05rem 0;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: flex;
+                            justify-content: space-between;
+                            .col-red {
+                                color: #FC4D52;
+                            }
+                        }
+                        // 券后价
+                        .but {
+                            height: .26rem;
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: space-between;
+                            .money {
+                                color: #FC4D52;
+                                white-space: nowrap;
+                                font-size: .18rem;
+                                position: relative;
+                                top: 2px;
+                                height: .22rem;
+                                width: 50%;
+                                span {
+                                    font-size: .12rem;
+                                    color: #FC4D52;
+                                }
+                            }
+                            .quan {
+                                line-height: .3rem;
+                                display: block;
+                                i {
+                                    font-size: .12rem;
+                                    color: #FC4D52;
+                                    background: #fff;
+                                    font-style: normal;
+                                    border-radius: 3px;
+                                    text-align: center;
+                                    border: 1px solid #fd5a5f;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    padding: 0 .1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 底部编辑
+.edit-foot {
+    position: fixed;
+    bottom: -.5rem;
+    z-index: 1001;
+    width: 100%;
+    height: .5rem;
+    background: #fff;
+    border-top: 1px solid #F0F0F0;
+    display: flex;
+    transition: bottom .5s;
+    .label {
+        flex: 2;
+        label {
+            display: inline-block;
+            line-height: .5rem;
+            height: .5rem;
+            font-size: .14rem;
+            color: #888;
+            i.fa {
+                width: .5rem;
+                font-size: .22rem;
+                color: #bbb;
+                vertical-align: middle;
+                text-align: center;
+            }
+            input[type=checkbox] {
+                display: none;
+            }
+            input:checked {
+                & ~ i.fa-circle-o::before {
+                    content: "\f05d";
+                    color: #FC3F78;
+                }
+            }
+        }
+    }
+    .del-btn {
+        flex: 1;
+        background: #FC3F78;
+        color: #fff;
+        text-align: center;
+        line-height: .5rem;
+    }
+}
